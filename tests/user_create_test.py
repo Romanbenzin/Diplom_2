@@ -9,6 +9,6 @@ class TestUserCreate:
 
     def test_user_create(self):
         response = requests.post(MAIN_URL+REGISTER, data=random_user_for_register())
-        print('sss')
-        print(response.json())
-        print('sss')
+
+        assert response.status_code == 200
+        assert response.json()["success"] == True

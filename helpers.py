@@ -6,8 +6,10 @@ def random_user_for_register():
     random_pass = f"password:{random_number}"
     random_username = f"Username:{random_number}"
 
-    return {
-    "email": random_email,
-    "password": random_pass,
-    "name": random_username
-}
+    user_data = {
+        "email": random_email,
+        "password": random_pass,
+        "name": random_username
+    }
+
+    return user_data
