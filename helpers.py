@@ -13,3 +13,20 @@ def random_user_for_register():
     }
 
     return user_data
+
+def generate_data_for_login(email, password):
+    login_data = {
+        "email": email,
+        "password": password
+    }
+
+    return login_data
+
+def generate_incorrect_data_for_login():
+    random_number = random.randint(100000000, 999999999)
+    login_data = {
+        "email": f"bimbimbim:{random_number}",
+        "password": f"bambambam:{random_number}"
+    }
+
+    return login_data
