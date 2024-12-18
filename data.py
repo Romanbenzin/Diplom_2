@@ -19,6 +19,11 @@ USER_WITHOUT_NAME = {
     "password": "password"
 }
 
+CHANGED_USER_DATA = {
+    "email": "changed_email",
+    "name": "changed_name"
+}
+
 ALREADY_EXISTS_USER_ERROR = "User already exists"
 CREATE_USER_WITHOUT_FIELD_ERROR = "Email, password and name are required fields"
 INCORRECT_LOGIN = "email or password are incorrect"

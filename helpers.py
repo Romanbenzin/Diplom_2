@@ -11,7 +11,6 @@ def random_user_for_register():
         "password": random_pass,
         "name": random_username
     }
-
     return user_data
 
 def generate_data_for_login(email, password):
@@ -19,7 +18,6 @@ def generate_data_for_login(email, password):
         "email": email,
         "password": password
     }
-
     return login_data
 
 def generate_incorrect_data_for_login():
@@ -28,5 +26,18 @@ def generate_incorrect_data_for_login():
         "email": f"bimbimbim:{random_number}",
         "password": f"bambambam:{random_number}"
     }
-
     return login_data
+
+def generate_header_for_login(token):
+    data = {
+            "Authorization": token
+        }
+    return data
+
+def generate_changed_data():
+    random_number = random.randint(100000000, 999999999)
+    data = {
+        "email": f"tic_a_hero:{random_number}",
+        "name": f"tic_a_hero?:{random_number}"
+    }
+    return data
