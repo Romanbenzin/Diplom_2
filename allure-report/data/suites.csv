@@ -1,6 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","496","Тест создания пользователя, без заполнения одного из обязательных полей","tests","Wed Dec 18 19:21:55 MSK 2024","passed","Wed Dec 18 19:21:55 MSK 2024","TestUserCreate","user_create_test","",""
-"","488","Тест создания пользователя, который уже зарегистрирован","tests","Wed Dec 18 19:21:54 MSK 2024","passed","Wed Dec 18 19:21:55 MSK 2024","TestUserCreate","user_create_test","",""
-"","529","Тест создания уникального пользователя","tests","Wed Dec 18 19:21:54 MSK 2024","passed","Wed Dec 18 19:21:54 MSK 2024","TestUserCreate","user_create_test","",""
-"","482","Тест создания пользователя, без заполнения одного из обязательных полей","tests","Wed Dec 18 19:21:56 MSK 2024","passed","Wed Dec 18 19:21:56 MSK 2024","TestUserCreate","user_create_test","",""
-"","497","Тест создания пользователя, без заполнения одного из обязательных полей","tests","Wed Dec 18 19:21:55 MSK 2024","passed","Wed Dec 18 19:21:56 MSK 2024","TestUserCreate","user_create_test","",""

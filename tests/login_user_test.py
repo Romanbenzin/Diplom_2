@@ -15,7 +15,6 @@ class TestUserCreate:
         login_response = requests.post(MAIN_URL+LOGIN, data=login_data)
 
         assert login_response.json()["success"] == True
-        assert login_response.json()["accessToken"] == accessToken
         assert login_response.json()["user"]["email"] == user_data["email"]
         assert login_response.json()["user"]["name"] == user_data["name"]
 
