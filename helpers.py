@@ -41,3 +41,13 @@ def generate_changed_data():
         "name": f"tic_a_hero?:{random_number}"
     }
     return data
+
+def generate_list_for_order(ingredient_id, ingredient_list):
+    ingredient_list.append(ingredient_id)
+    return ingredient_list
+
+def generate_body_for_order(ingredient_list):
+    order_body = {
+        "ingredients": ingredient_list
+    }
+    return order_body
