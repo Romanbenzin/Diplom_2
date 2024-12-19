@@ -38,7 +38,7 @@ class TestOrderCreate:
         assert order_create_response.json()["success"] == True
 
     @allure.title("Тест создания заказа без ингредиентов")
-    def test_order_create_with_auth(self, create_new_user):
+    def test_order_create_without_ingredient(self, create_new_user):
         user_data, register_response = create_new_user
         accessToken = register_response.json()["accessToken"]
 
