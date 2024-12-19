@@ -2,7 +2,7 @@ import allure
 import requests
 
 from confest import create_new_user
-from static_data.error_data import CHANGE_USER_DATA_ERROR
+from static_data.error_data import USER_NOT_AUTH_ERROR
 from helpers import generate_header_for_login, generate_changed_data
 from static_data.urls import MAIN_URL, GET_USER_DATA, PATCH_USER_DATA
 
@@ -39,7 +39,7 @@ class TestUserDataChange:
         user_data_response_after_change = requests.get(MAIN_URL + GET_USER_DATA, headers=auth_token)
 
         assert response_after_change_data.json()["success"] == False
-        assert response_after_change_data.json()["message"] == CHANGE_USER_DATA_ERROR
+        assert response_after_change_data.json()["message"] == USER_NOT_AUTH_ERROR
         assert user_data_response_after_change.json()["user"]["email"] != changed_data["email"]
         assert user_data_response_after_change.json()["user"]["email"] == user_data_response_before_change.json()["user"]["email"]
         assert user_data_response_after_change.json()["user"]["name"] != changed_data["name"]
