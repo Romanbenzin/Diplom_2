@@ -4,7 +4,7 @@ import requests
 
 from static_data.json_data import USER_WITHOUT_NAME
 from helpers import random_user_for_register
-from urls import MAIN_URL, UPDATE_TOKEN, REGISTER
+from static_data.urls import MAIN_URL, UPDATE_TOKEN, REGISTER
 
 
 @allure.step("Создание нового пользователя")

@@ -4,7 +4,7 @@ import requests
 from confest import create_new_user
 from static_data.json_data import INVALID_ORDER_DATA
 from helpers import generate_header_for_login, generate_list_for_order, generate_body_for_order
-from urls import MAIN_URL, CREATE_ORDER, GET_INGREDIENTS
+from static_data.urls import MAIN_URL, CREATE_ORDER, GET_INGREDIENTS
 
 
 class TestOrderCreate:

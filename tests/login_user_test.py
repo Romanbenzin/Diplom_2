@@ -4,7 +4,7 @@ import requests
 from confest import create_new_user
 from static_data.error_data import INCORRECT_LOGIN
 from helpers import generate_data_for_login, generate_incorrect_data_for_login
-from urls import MAIN_URL, LOGIN
+from static_data.urls import MAIN_URL, LOGIN
 
 
 class TestUserCreate:

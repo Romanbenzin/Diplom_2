@@ -5,7 +5,7 @@ import requests
 from static_data.json_data import ALREADY_EXISTS_USER, USER_WITHOUT_EMAIL, USER_WITHOUT_PASS, USER_WITHOUT_NAME
 from static_data.error_data import ALREADY_EXISTS_USER_ERROR, CREATE_USER_WITHOUT_FIELD_ERROR
 from helpers import random_user_for_register
-from urls import MAIN_URL, REGISTER
+from static_data.urls import MAIN_URL, REGISTER
 
 
 class TestUserCreate:
