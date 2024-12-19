@@ -17,14 +17,20 @@ $env:PYTHONPATH="."; pytest tests/ --alluredir=allure-results -v
 allure generate allure-results -o allure-report --clean
 allure open allure-report
 
-# urls.py
+# static_data/urls.py
 url'ы для запросов к API
 
-# data.py
-Статические данные
+# static_data/error_data.py
+Статические данные ошибок
+
+# static_data/json_data.py
+Статические данные json
 
 # helpers.py
 Небольшие функции, которые помогают в тестах
+
+# confest.py
+Фикстуры
 
 # requirements
 Внешние зависимости
