@@ -2,7 +2,7 @@ import allure
 import requests
 
 from confest import create_new_user
-from data import CHANGE_USER_DATA_ERROR
+from static_data.error_data import CHANGE_USER_DATA_ERROR
 from helpers import generate_header_for_login, generate_changed_data
 from urls import MAIN_URL, GET_USER_DATA, PATCH_USER_DATA
 

@@ -2,7 +2,7 @@ import allure
 import pytest
 import requests
 
-from data import USER_WITHOUT_NAME
+from static_data.json_data import USER_WITHOUT_NAME
 from helpers import random_user_for_register
 from urls import MAIN_URL, UPDATE_TOKEN, REGISTER
 
