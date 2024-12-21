@@ -1,2 +1,0 @@
-<Response [200]>
-{'success': True, 'orders': [{'_id': '6763d7369ed280001b53a94a', 'ingredients': ['61c0c5a71d1f82001bdaaa6d', '61c0c5a71d1f82001bdaaa6f'], 'status': 'done', 'name': 'Бессмертный флюоресцентный бургер', 'createdAt': '2024-12-19T08:20:06.114Z', 'updatedAt': '2024-12-19T08:20:07.260Z', 'number': 165011}], 'total': 165011, 'totalToday': 51}

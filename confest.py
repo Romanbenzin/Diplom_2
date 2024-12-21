@@ -16,4 +16,3 @@ def create_new_user():
 
     accessToken = response.json()["accessToken"]
     delete_user = requests.delete(MAIN_URL+DELETE, headers=generate_header_for_login(accessToken))
-    print(delete_user.json())

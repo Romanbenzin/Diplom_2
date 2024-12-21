@@ -1,3 +1,4 @@
+import json
 import random
 
 def random_user_for_register():
@@ -51,3 +52,11 @@ def generate_body_for_order(ingredient_list):
         "ingredients": ingredient_list
     }
     return order_body
+
+def generate_json_for_test_change(success, email, name):
+    json_data = {
+        "success": success,
+        "email": email,
+        "name": name
+    }
+    return json.dumps(json_data)
